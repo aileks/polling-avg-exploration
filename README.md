@@ -10,6 +10,8 @@ Data obtained from [FiveThirtyEight](https://projects.fivethirtyeight.com/polls/
 
 - [x] Clean data
 - [ ] Visualize data
+  - [x] Polling data
+  - [ ] Comparison to election results
 - [ ] Create shiny app
 
 ## Local Setup (WIP)

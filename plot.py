@@ -10,14 +10,24 @@ blue_patch = mlines.Line2D([], [], color='blue', label='Harris')
 red_patch = mlines.Line2D([], [], color='red', label='Trump')
 
 # Polling average bar plot
-plt.figure(figsize=(14, 8))
-sns.barplot(x="state", y="Harris_average", data=df, color="blue", alpha=0.8)
-sns.barplot(x="state", y="Trump_average", data=df, color="red", alpha=0.8)
+df_long = pd.melt(df, id_vars=['state'], value_vars=['Harris_average', 'Trump_average'],
+                  var_name='Candidate', value_name='Polling_Average')
+
+# Create the bar plot
+plt.figure(figsize=(17, 10))
+sns.barplot(x="state", y="Polling_Average", hue="Candidate", data=df_long,
+            palette={"Harris_average": "blue", "Trump_average": "red"}, alpha=0.8)
+
+# Add title and labels
 plt.title("Battleground State Polling Averages")
 plt.ylabel("Polling Average (%)")
 plt.xlabel("State")
 plt.xticks(rotation=45)
-plt.legend(handles=[blue_patch, red_patch], loc="upper left", title="Candidate")
+
+# Add legend
+plt.legend(title="Candidate", loc="upper left")
+
+# Adjust layout and save plot
 plt.tight_layout()
 plt.savefig("images/polling_bar.png")
 
