@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "/Users/aileks/Code/polling-avg-exploration",
+        "app_url": "https://aileks.shinyapps.io/2024-polling-averages/",
+        "app_id": 13447039,
+        "app_guid": null,
+        "title": "2024-polling-averages",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}
