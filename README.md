@@ -10,12 +10,12 @@ Data obtained from [FiveThirtyEight](https://projects.fivethirtyeight.com/polls/
 
 - [x] Clean data
 - [ ] Visualize data
-  - [x] Polling data
-  - [ ] Comparison to election results
+    - [x] Polling data
+    - [ ] Comparison to election results
 - [ ] Create shiny app
-  - [x] Creation
-  - [x] Deployment
-  - [ ] Fleshing out
+    - [x] Creation
+    - [x] [Deployment](https://aileks.shinyapps.io/2024-polling-averages/)
+    - [ ] Fleshing out
 
 ## Local Setup (WIP)
 
